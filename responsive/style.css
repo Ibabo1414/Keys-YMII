@@ -1,0 +1,37 @@
+header, section, footer {
+    background-color: #eee;
+    height: 100px;
+    border: 1px solid #000;
+}
+header + div {
+    display: flex;
+    justify-content: space-between;
+}
+div section {
+    width: 49.5%;
+}
+
+section, footer {
+    margin-top: 10px;
+}
+div + section {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    div + section {
+        display: none;
+    }
+
+    header + div {
+        display: block;
+    }
+
+    div section {
+        width: 100%;
+    }
+
+    body {
+        background-color: #88a70a;
+    }
+}
